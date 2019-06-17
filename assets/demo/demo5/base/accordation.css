@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+.portlet.box>.portlet-body {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.accordion .panel .panel-title .accordion-toggle {
+    display: block;
+	padding: 10px 15px;}
+
