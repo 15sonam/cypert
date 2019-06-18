@@ -26,8 +26,44 @@
 		<!--end::Page Vendors -->
 		<link href="assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="assets/demo/demo5/base/style.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/custom.css" rel="stylesheet" type="text/css" />
 		<!--end::Base Styles -->
 		<link rel="shortcut icon" href="assets/demo/demo5/media/img/logo/favicon.png" />
+
+
+
+<style>
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+ul.breadcrumb li {
+  display: inline;
+  /*font-size: 18px;*/
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+.zoom:hover {
+transform: scale(1.05);
+background-color: #f6f1cf52;
+transition: all 0.9s ease-in-out;
+
+}
+</style>
+
+
 	</head>
 	<!-- end::Head -->
     <!-- end::Body -->
@@ -40,48 +76,15 @@
 					<div class="m-container m-container--responsive m-container--xxl m-container--full-height m-page__container">
 						<div class="m-stack m-stack--ver m-stack--desktop">
 							<!-- begin::Brand -->
-							<div class="m-stack__item m-brand" style="width:420px;">
+							<div class="m-stack__item m-brand" style="width: 420px;">
 								<div class="m-stack m-stack--ver m-stack--general m-stack--inline">
 									<div class="m-stack__item m-stack__item--middle m-brand__logo">
 										<a href="index.html" class="m-brand__logo-wrapper">
-											<img alt="" src="assets/demo/demo5/media/img/logo/logo1.png"/>
+											<img alt="" src="assets/demo/demo5/media/img/logo/logo1.png">
 										</a>
 									</div>
 									<div class="m-stack__item m-stack__item--middle m-brand__tools">
-										<div class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-left m-dropdown--align-push" m-dropdown-toggle="click" aria-expanded="true">
-											<a href="#" class="dropdown-toggle m-dropdown__toggle btn btn-outline-metal m-btn  m-btn--icon m-btn--pill">
-												<span>
-													Trainee
-												</span>
-											</a>
-											<div class="m-dropdown__wrapper">
-												<span class="m-dropdown__arrow m-dropdown__arrow--left m-dropdown__arrow--adjust"></span>
-												<div class="m-dropdown__inner">
-													<div class="m-dropdown__body">
-														<div class="m-dropdown__content">
-															<ul class="m-nav">
-																<li class="m-nav__section m-nav__section--first m--hide">
-																	<span class="m-nav__section-text">
-																		Quick Menu
-																	</span>
-																</li>
-																
-																<li class="m-nav__item">
-																	<a href="" class="m-nav__link">
-																		<i class="m-nav__link-icon fa fa-user"></i>
-																		<span class="m-nav__link-text">
-																		Trainer	
-																		</span>
-																	</a>
-																</li>
-																
-																
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
+										
 										<!-- begin::Responsive Header Menu Toggler-->
 										<a id="m_aside_header_menu_mobile_toggle" href="javascript:;" class="m-brand__icon m-brand__toggler m--visible-tablet-and-mobile-inline-block">
 											<span></span>
@@ -118,113 +121,25 @@
 											
 										</li>
 										<li class="m-menu__item  m-menu__item" aria-haspopup="true">
-											<a  href="feedback.html" class="m-menu__link">
+											<a  href="Calendar.html" class="m-menu__link">
 												<span class="m-menu__link-text">
-													Feedback
+													Calendar
 												</span>
 												
 											</a>
 											
 										</li>
+
 										<li class="m-menu__item  m-menu__item" aria-haspopup="true">
-											<a  href="ame.html" class="m-menu__link">
+											<a  href="feedback.html" class="m-menu__link">
 												<span class="m-menu__link-text">
-													AME
+													Report
 												</span>
 												
-											</a> 
-										
-										</li>
-										<li class="m-menu__item  m-menu__item--submenu"  m-menu-submenu-toggle="click" m-menu-link-redirect="1" aria-haspopup="true">
-											<a  href="#" class="m-menu__link m-menu__toggle">
-												<span class="m-menu__item-here"></span>
-												<span class="m-menu__link-text">
-													Profile
-												</span>
-												<i class="m-menu__hor-arrow la la-angle-down"></i>
-												<i class="m-menu__ver-arrow la la-angle-right"></i>
 											</a>
-											<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--right" style="right: 20%;">
-												<span class="m-menu__arrow m-menu__arrow--adjust"></span>
-												<ul class="m-menu__subnav">
-													
-													<li class="m-menu__item  m-menu__item--submenu"  m-menu-submenu-toggle="hover" m-menu-link-redirect="1" aria-haspopup="true">
-														<a  href="personal_profile.html" class="m-menu__link m-menu">
-															
-															<span class="m-menu__link-text">
-																Personal Profile
-															</span>
-															
-														</a>
-														
-													</li>
-													<li class="m-menu__item  m-menu__item--submenu"  m-menu-submenu-toggle="hover" m-menu-link-redirect="1" aria-haspopup="true">
-														<a  href="company_profile.html" class="m-menu__link m-menu">
-															
-															<span class="m-menu__link-text">
-																Company Profile
-															</span>
-															
-														</a>
-														
-													</li>
-													<li class="m-menu__item  m-menu__item--submenu"  m-menu-submenu-toggle="hover" m-menu-link-redirect="1" aria-haspopup="true">
-														<a  href="qualification.html" class="m-menu__link m-menu">
-															
-															<span class="m-menu__link-text">
-																Qualification
-															</span>
-															
-														</a>
-														
-													</li>
-													
-													<li class="m-menu__item  m-menu__item--submenu"  m-menu-submenu-toggle="hover" m-menu-link-redirect="1" aria-haspopup="true">
-														<a  href="modules.html" class="m-menu__link m-menu">
-															
-															<span class="m-menu__link-text">
-																Modules
-															</span>
-															
-														</a>
-														
-													</li>
-													
-													<li class="m-menu__item  m-menu__item--submenu"  m-menu-submenu-toggle="hover" m-menu-link-redirect="1" aria-haspopup="true">
-														<a  href="license.html" class="m-menu__link m-menu">
-															
-															<span class="m-menu__link-text">
-																Licenses
-															</span>
-															
-														</a>
-														
-													</li>
-													
-													<li class="m-menu__item  m-menu__item--submenu"  m-menu-submenu-toggle="hover" m-menu-link-redirect="1" aria-haspopup="true">
-														<a  href="previous_employer.html" class="m-menu__link m-menu">
-															
-															<span class="m-menu__link-text">
-																Previous Employer
-															</span>
-															
-														</a>
-														
-													</li>
-													
-													<li class="m-menu__item  m-menu__item--submenu"  m-menu-submenu-toggle="hover" m-menu-link-redirect="1" aria-haspopup="true">
-														<a  href="resume.html" class="m-menu__link m-menu">
-															
-															<span class="m-menu__link-text">
-																Resume
-															</span>
-															
-														</a>
-														
-													</li>
-												</ul>
-											</div>
+											
 										</li>
+										
 									</ul>
 								</div>
 							</div>
@@ -234,6 +149,19 @@
 								<div id="m_header_topbar" class="m-topbar  m-stack m-stack--ver m-stack--general">
 									<div class="m-stack__item m-topbar__nav-wrapper">
 										<ul class="m-topbar__nav m-nav m-nav--inline">
+										
+
+										<li class="m-nav__item m-topbar__notifications m-topbar__notifications--img m-dropdown m-dropdown--large m-dropdown--header-bg-fill m-dropdown--arrow m-dropdown--align-center m-dropdown--mobile-full-width" m-dropdown-toggle="click" m-dropdown-persistent="1" aria-expanded="true">
+												<a href="#" class="m-nav__link m-dropdown__toggle" id="">
+													
+													<span class="m-nav__link-icon ">
+														<span class="m-nav__link-icon-wrapper">
+															<i class="flaticon-cart"></i>
+														</span>
+													</span>
+												</a>
+												
+											</li>
 											<li class="m-nav__item m-topbar__notifications m-topbar__notifications--img m-dropdown m-dropdown--large m-dropdown--header-bg-fill m-dropdown--arrow m-dropdown--align-center 	m-dropdown--mobile-full-width" m-dropdown-toggle="click" m-dropdown-persistent="1">
 												<a href="#" class="m-nav__link m-dropdown__toggle" id="m_topbar_notification_icon">
 													<span class="m-nav__link-badge m-badge m-badge--dot m-badge--dot-small m-badge--danger"></span>
@@ -542,7 +470,7 @@
 					<!-- BEGIN: Subheader -->
 					<div class="m-subheader ">
 						<div class="d-flex align-items-center">
-							<div class="mr-auto">
+							<!-- <div class="mr-auto">
 								<h3 class="m-subheader__title m-subheader__title--separator">
 									Certification
 								</h3>
@@ -554,153 +482,766 @@
 									</li>
 									
 								</ul>
-							</div>
+							</div> -->
+							<div class="scp-breadcrumb">
+    <ul class="breadcrumb">
+       <li class="active">Elearning</li>
+        <li><a href="#onsite">Onsite</a></li>
+        
+    </ul>
+</div>
 							<div>
 
 							</div>
 						</div>
 					</div>
 					<!-- END: Subheader -->
+
+
+					<!-- END: Subheader -->
+
+
 					<div class="m-content">
+                    <div class="ad_more py-3">
+					<h5 class="text-white pl-5" id="elearning">Elearning Courses</h5>	
+					</div>
 						<!--Begin::Section-->
 						<div class="m-portlet">
+
 							<!--Begin::Section-->
 						<div class="row">
-						<div class="col-xl-4">
-								<!--begin:: Widgets/Blog-->
-								<div class="m-portlet m-portlet--bordered-semi m-portlet--full-height  m-portlet--rounded-force">
-									<div class="m-portlet__head m-portlet__head--fit">
+
+						<div class="col-xl-3">
+								<!--begin:: Widgets/Top Products-->
+								<div class="p-2"><div class="m-portlet m-portlet--bordered-semi m-portlet--full-height zoom">
+									<div class="m-portlet__head">
+										<div class="m-portlet__head-caption">
+											<div class="m-checkbox-list  ">
+																	<label class="m-checkbox">
+																		<input type="checkbox">
+																		
+																		<span></span>
+																	</label>
+																	
+																</div>
+																
+																	<span class="m-widget4__number m--font-danger">
+														<h4 class="text-right"> 17000 &#8377;</h4>
+														
+													</span>
+																
+
+
+										</div>
+										
 									</div>
-									<div class="m-portlet__body">
-										<div class="m-widget19">
-											<div class="m-widget19__pic m-portlet-fit--top m-portlet-fit--sides" style="min-height-: 286px">
-												<img src="assets/app/media/img//blog/certificate.png" alt="">
-<!--
-												<h3 class="m-widget19__title m--font-light">
-													Introducing New Feature
-												</h3>
--->
-												<div class="m-widget19__shadow"></div>
-											</div>
-											<div class="m-widget19__content">
-												<div class="m-widget19__header">
-													<div class="m-widget19__info">
-														<span class="m-widget19__username" style="display: initial;">
-															2018
-														</span>
-													
-													</div>
-                                      <div class="m-widget19__action" style="margin-top: 0.5rem;">
-												<button type="button" class="btn m-btn--pill btn-secondary m-btn m-btn--hover-brand m-btn--custom">
-													<a href="course.html" style="color: #212529; text-decoration: none;">View Course</a>
-												</button>
-											</div>
+									<div class="m-portlet__body high_body">
+										<!--begin::Widget5-->
+										<div class="m-widget4">
+											
+											<div class="m-widget4__item">
+												<div class="m-widget4__img m-widget4__img--logo">
+													<a href="#" class="btn btn-brand m-btn m-btn--icon m-btn--icon-only m-btn--custom m-btn--pill">
+															<i class="fa flaticon-list"></i>
+														</a>
 												</div>
-<!--
-												<div class="m-widget19__body">
-													 The printing and typesetting industry scrambled a type specimen book text of the dummy text of the printing printing and typesetting industry scrambled dummy text of the printing.
+												<div class="m-widget4__info">
+													<span class="m-widget4__title">
+														Transit Inspection
+														Training
+													</span>
+													<br>
+													<!-- 
+													<span class="m-widget4__ext pt-4">
+													<span class="m-widget4__sub p-3">
+														Price: 
+													</span>
+													<span class="m-widget4__number m--font-danger">
+														 17000 &#8377;
+														
+													</span>
+												</span> -->
 												</div>
--->
+												
 											</div>
 											
+											
 										</div>
+										<!--end::Widget 5-->
 									</div>
-								</div>
-								<!--end:: Widgets/Blog-->
+								</div> </div>
+								
+								<!--end:: Widgets/Top Products-->
 							</div>
-							<div class="col-xl-4">
-								<!--begin:: Widgets/Blog-->
-								<div class="m-portlet m-portlet--bordered-semi m-portlet--full-height  m-portlet--rounded-force">
-									<div class="m-portlet__head m-portlet__head--fit">
-									</div>
-									<div class="m-portlet__body">
-										<div class="m-widget19">
-											<div class="m-widget19__pic m-portlet-fit--top m-portlet-fit--sides" style="min-height-: 286px">
-												<img src="assets/app/media/img//blog/certificate.png" alt="">
-<!--
-												<h3 class="m-widget19__title m--font-light">
-													Introducing New Feature
-												</h3>
--->
-												<div class="m-widget19__shadow"></div>
-											</div>
-											<div class="m-widget19__content">
-												<div class="m-widget19__header">
-													<div class="m-widget19__info">
-														<span class="m-widget19__username">
-															2018
-														</span>
-													</div>
-												</div>
-												<div class="m-widget19__body">
-													 The printing and typesetting industry scrambled a type specimen book text of the dummy text of the printing printing and typesetting industry scrambled dummy text of the printing.
-												</div>
-											</div>
-											<div class="m-widget19__action">
-												<button type="button" class="btn m-btn--pill btn-secondary m-btn m-btn--hover-brand m-btn--custom">
-													<a href="course.html" style="color: #212529; text-decoration: none;">View Course</a>
-												</button>
-											</div>
+							<div class="col-xl-3">
+								<!--begin:: Widgets/Top Products-->
+								<div class="p-2"><div class="m-portlet m-portlet--bordered-semi m-portlet--full-height zoom">
+									<div class="m-portlet__head">
+										<div class="m-portlet__head-caption">
+											<div class="m-checkbox-list  ">
+																	<label class="m-checkbox">
+																		<input type="checkbox">
+																		
+																		<span></span>
+																	</label>
+																	
+																</div>
+																
+																	<span class="m-widget4__number m--font-danger">
+														<h4 class="text-right"> 17000 &#8377;</h4>
+														
+													</span>
+																
+
+
 										</div>
+										
 									</div>
-								</div>
-								<!--end:: Widgets/Blog-->
-							</div>
-							<div class="col-xl-4">
-								<!--begin:: Widgets/Blog-->
-								<div class="m-portlet m-portlet--bordered-semi m-portlet--full-height  m-portlet--rounded-force">
-									<div class="m-portlet__head m-portlet__head--fit">
-									</div>
-									<div class="m-portlet__body">
-										<div class="m-widget19">
-											<div class="m-widget19__pic m-portlet-fit--top m-portlet-fit--sides" style="min-height-: 286px">
-												<img src="assets/app/media/img//blog/certificate.png" alt="">
-<!--
-												<h3 class="m-widget19__title m--font-light">
-													Introducing New Feature
-												</h3>
--->
-												<div class="m-widget19__shadow"></div>
-											</div>
-											<div class="m-widget19__content">
-												<div class="m-widget19__header">
-													<div class="m-widget19__info">
-														<span class="m-widget19__username">
-															2018
-														</span>
-													</div>
+									<div class="m-portlet__body high_body">
+										<!--begin::Widget5-->
+										<div class="m-widget4">
+											
+											<div class="m-widget4__item">
+												<div class="m-widget4__img m-widget4__img--logo">
+													<a href="#" class="btn btn-brand m-btn m-btn--icon m-btn--icon-only m-btn--custom m-btn--pill">
+															<i class="fa flaticon-list"></i>
+														</a>
 												</div>
-												<div class="m-widget19__body">
-													 The printing and typesetting industry scrambled a type specimen book text of the dummy text of the printing printing and typesetting industry scrambled dummy text of the printing.
+												<div class="m-widget4__info">
+													<span class="m-widget4__title">
+														Transit Inspection(Airbus A320-232 & A320-251 N-Theoretical Elements)
+														Training 
+													</span>
+													<br>
+													<!-- 
+													<span class="m-widget4__ext pt-4">
+													<span class="m-widget4__sub p-3">
+														Price: 
+													</span>
+													<span class="m-widget4__number m--font-danger">
+														 17000 &#8377;
+														
+													</span>
+												</span> -->
 												</div>
+												
 											</div>
-											<div class="m-widget19__action">
-												<button type="button" class="btn m-btn--pill btn-secondary m-btn m-btn--hover-brand m-btn--custom">
-													<a href="course.html" style="color: #212529; text-decoration: none;">View Course</a>
-												</button>
-											</div>
+											
+											
 										</div>
+										<!--end::Widget 5-->
 									</div>
-								</div>
-								<!--end:: Widgets/Blog-->
+								</div> </div>
+								
+								<!--end:: Widgets/Top Products-->
 							</div>
+							<div class="col-xl-3">
+								<!--begin:: Widgets/Top Products-->
+								<div class="p-2"><div class="m-portlet m-portlet--bordered-semi m-portlet--full-height zoom">
+									<div class="m-portlet__head">
+										<div class="m-portlet__head-caption">
+											<div class="m-checkbox-list  ">
+																	<label class="m-checkbox">
+																		<input type="checkbox">
+																		
+																		<span></span>
+																	</label>
+																	
+																</div>
+																
+																	<span class="m-widget4__number m--font-danger">
+														<h4 class="text-right"> 17000 &#8377;</h4>
+														
+													</span>
+																
+
+
+										</div>
+										
+									</div>
+									<div class="m-portlet__body high_body">
+										<!--begin::Widget5-->
+										<div class="m-widget4">
+											
+											<div class="m-widget4__item">
+												<div class="m-widget4__img m-widget4__img--logo">
+													<a href="#" class="btn btn-brand m-btn m-btn--icon m-btn--icon-only m-btn--custom m-btn--pill">
+															<i class="fa flaticon-list"></i>
+														</a>
+												</div>
+												<div class="m-widget4__info">
+													<span class="m-widget4__title">
+														Transit Inspection
+														Training
+													</span>
+													<br>
+													<!-- 
+													<span class="m-widget4__ext pt-4">
+													<span class="m-widget4__sub p-3">
+														Price: 
+													</span>
+													<span class="m-widget4__number m--font-danger">
+														 17000 &#8377;
+														
+													</span>
+												</span> -->
+												</div>
+												
+											</div>
+											
+											
+										</div>
+										<!--end::Widget 5-->
+									</div>
+								</div> </div>
+								
+								<!--end:: Widgets/Top Products-->
+							</div>
+							<div class="col-xl-3">
+								<!--begin:: Widgets/Top Products-->
+								<div class="p-2"><div class="m-portlet m-portlet--bordered-semi m-portlet--full-height zoom">
+									<div class="m-portlet__head">
+										<div class="m-portlet__head-caption">
+											<div class="m-checkbox-list  ">
+																	<label class="m-checkbox">
+																		<input type="checkbox">
+																		
+																		<span></span>
+																	</label>
+																	
+																</div>
+																
+																	<span class="m-widget4__number m--font-danger">
+														<h4 class="text-right"> 17000 &#8377;</h4>
+														
+													</span>
+																
+
+
+										</div>
+										
+									</div>
+									<div class="m-portlet__body high_body">
+										<!--begin::Widget5-->
+										<div class="m-widget4">
+											
+											<div class="m-widget4__item">
+												<div class="m-widget4__img m-widget4__img--logo">
+													<a href="#" class="btn btn-brand m-btn m-btn--icon m-btn--icon-only m-btn--custom m-btn--pill">
+															<i class="fa flaticon-list"></i>
+														</a>
+												</div>
+												<div class="m-widget4__info">
+													<span class="m-widget4__title">
+														Transit Inspection(Airbus A320-232 & A320-251 N-Theoretical Elements)
+														Training
+													</span>
+													<br>
+													<!-- 
+													<span class="m-widget4__ext pt-4">
+													<span class="m-widget4__sub p-3">
+														Price: 
+													</span>
+													<span class="m-widget4__number m--font-danger">
+														 17000 &#8377;
+														
+													</span>
+												</span> -->
+												</div>
+												
+											</div>
+											
+											
+										</div>
+										<!--end::Widget 5-->
+									</div>
+								</div> </div>
+								
+								<!--end:: Widgets/Top Products-->
+							</div>
+
+							<div class="col-xl-3">
+								<!--begin:: Widgets/Top Products-->
+								<div class="p-2"><div class="m-portlet m-portlet--bordered-semi m-portlet--full-height zoom">
+									<div class="m-portlet__head">
+										<div class="m-portlet__head-caption">
+											<div class="m-checkbox-list  ">
+																	<label class="m-checkbox">
+																		<input type="checkbox">
+																		
+																		<span></span>
+																	</label>
+																	
+																</div>
+																
+																	<span class="m-widget4__number m--font-danger">
+														<h4 class="text-right"> 17000 &#8377;</h4>
+														
+													</span>
+																
+
+
+										</div>
+										
+									</div>
+									<div class="m-portlet__body high_body">
+										<!--begin::Widget5-->
+										<div class="m-widget4">
+											
+											<div class="m-widget4__item">
+												<div class="m-widget4__img m-widget4__img--logo">
+													<a href="#" class="btn btn-brand m-btn m-btn--icon m-btn--icon-only m-btn--custom m-btn--pill">
+															<i class="fa flaticon-list"></i>
+														</a>
+												</div>
+												<div class="m-widget4__info">
+													<span class="m-widget4__title">
+														Transit Inspection(Airbus A320-232 & A320-251 N-Theoretical Elements)
+														Training
+													</span>
+													<br>
+													<!-- 
+													<span class="m-widget4__ext pt-4">
+													<span class="m-widget4__sub p-3">
+														Price: 
+													</span>
+													<span class="m-widget4__number m--font-danger">
+														 17000 &#8377;
+														
+													</span>
+												</span> -->
+												</div>
+												
+											</div>
+											
+											
+										</div>
+										<!--end::Widget 5-->
+									</div>
+								</div> </div>
+								
+								<!--end:: Widgets/Top Products-->
+							</div>
+
+							<div class="col-xl-3">
+								<!--begin:: Widgets/Top Products-->
+								<div class="p-2"><div class="m-portlet m-portlet--bordered-semi m-portlet--full-height zoom">
+									<div class="m-portlet__head">
+										<div class="m-portlet__head-caption">
+											<div class="m-checkbox-list  ">
+																	<label class="m-checkbox">
+																		<input type="checkbox">
+																		
+																		<span></span>
+																	</label>
+																	
+																</div>
+																
+																	<span class="m-widget4__number m--font-danger">
+														<h4 class="text-right"> 17000 &#8377;</h4>
+														
+													</span>
+																
+
+
+										</div>
+										
+									</div>
+									<div class="m-portlet__body high_body">
+										<!--begin::Widget5-->
+										<div class="m-widget4">
+											
+											<div class="m-widget4__item">
+												<div class="m-widget4__img m-widget4__img--logo">
+													<a href="#" class="btn btn-brand m-btn m-btn--icon m-btn--icon-only m-btn--custom m-btn--pill">
+															<i class="fa flaticon-list"></i>
+														</a>
+												</div>
+												<div class="m-widget4__info">
+													<span class="m-widget4__title">
+														Transit Inspection(Airbus A320-232 & A320-251 N-Theoretical Elements)
+														Training
+													</span>
+													<br>
+													<!-- 
+													<span class="m-widget4__ext pt-4">
+													<span class="m-widget4__sub p-3">
+														Price: 
+													</span>
+													<span class="m-widget4__number m--font-danger">
+														 17000 &#8377;
+														
+													</span>
+												</span> -->
+												</div>
+												
+											</div>
+											
+											
+										</div>
+										<!--end::Widget 5-->
+									</div>
+								</div> </div>
+								
+								<!--end:: Widgets/Top Products-->
+							</div>
+
+						
+							
 						</div>
 						<!--End::Section-->
 						</div>
 						<!--End::Section-->
 
 					</div>
+					
+					<div class="m-content">
+					<div class="ad_more py-3">
+					<h5 class="text-white pl-5" id="onsite">Onsite Courses</h5>	
+					</div>
+					
+						<!--Begin::Section-->
+						<div class="m-portlet">
+							<!--Begin::Section-->
+						<div class="row">
+
+						<div class="col-xl-3">
+								<!--begin:: Widgets/Top Products-->
+								<div class="p-2"><div class="m-portlet m-portlet--bordered-semi m-portlet--full-height zoom">
+									<div class="m-portlet__head">
+										<div class="m-portlet__head-caption">
+											<div class="m-checkbox-list  ">
+																	<label class="m-checkbox">
+																		<input type="checkbox">
+																		
+																		<span></span>
+																	</label>
+																	
+																</div>
+																
+																	<span class="m-widget4__number m--font-danger">
+														<h4 class="text-right"> 17000 &#8377;</h4>
+														
+													</span>
+																
+
+
+										</div>
+										
+									</div>
+									<div class="m-portlet__body high_body">
+										<!--begin::Widget5-->
+										<div class="m-widget4">
+											
+											<div class="m-widget4__item">
+												<div class="m-widget4__img m-widget4__img--logo">
+													<a href="#" class="btn btn-brand m-btn m-btn--icon m-btn--icon-only m-btn--custom m-btn--pill">
+															<i class="fa flaticon-list"></i>
+														</a>
+												</div>
+												<div class="m-widget4__info">
+													<span class="m-widget4__title">
+														Transit Inspection(Airbus A320-232 & A320-251 N-Theoretical Elements)
+														Training
+													</span>
+													<br>
+													<!-- 
+													<span class="m-widget4__ext pt-4">
+													<span class="m-widget4__sub p-3">
+														Price: 
+													</span>
+													<span class="m-widget4__number m--font-danger">
+														 17000 &#8377;
+														
+													</span>
+												</span> -->
+												</div>
+												
+											</div>
+											
+											
+										</div>
+										<!--end::Widget 5-->
+									</div>
+								</div> </div>
+								
+								<!--end:: Widgets/Top Products-->
+							</div>
+							<div class="col-xl-3">
+								<!--begin:: Widgets/Top Products-->
+								<div class="p-2"><div class="m-portlet m-portlet--bordered-semi m-portlet--full-height zoom">
+									<div class="m-portlet__head">
+										<div class="m-portlet__head-caption">
+											<div class="m-checkbox-list  ">
+																	<label class="m-checkbox">
+																		<input type="checkbox">
+																		
+																		<span></span>
+																	</label>
+																	
+																</div>
+																
+																	<span class="m-widget4__number m--font-danger">
+														<h4 class="text-right"> 17000 &#8377;</h4>
+														
+													</span>
+																
+
+
+										</div>
+										
+									</div>
+									<div class="m-portlet__body high_body">
+										<!--begin::Widget5-->
+										<div class="m-widget4">
+											
+											<div class="m-widget4__item">
+												<div class="m-widget4__img m-widget4__img--logo">
+													<a href="#" class="btn btn-brand m-btn m-btn--icon m-btn--icon-only m-btn--custom m-btn--pill">
+															<i class="fa flaticon-list"></i>
+														</a>
+												</div>
+												<div class="m-widget4__info">
+													<span class="m-widget4__title">
+														Transit Inspection(Airbus A320-232 & A320-251 N-Theoretical Elements)
+														Training
+													</span>
+													<br>
+													<!-- 
+													<span class="m-widget4__ext pt-4">
+													<span class="m-widget4__sub p-3">
+														Price: 
+													</span>
+													<span class="m-widget4__number m--font-danger">
+														 17000 &#8377;
+														
+													</span>
+												</span> -->
+												</div>
+												
+											</div>
+											
+											
+										</div>
+										<!--end::Widget 5-->
+									</div>
+								</div> </div>
+								
+								<!--end:: Widgets/Top Products-->
+							</div>
+							<div class="col-xl-3">
+								<!--begin:: Widgets/Top Products-->
+								<div class="p-2"><div class="m-portlet m-portlet--bordered-semi m-portlet--full-height zoom">
+									<div class="m-portlet__head">
+										<div class="m-portlet__head-caption">
+											<div class="m-checkbox-list  ">
+																	<label class="m-checkbox">
+																		<input type="checkbox">
+																		
+																		<span></span>
+																	</label>
+																	
+																</div>
+																
+																	<span class="m-widget4__number m--font-danger">
+														<h4 class="text-right"> 17000 &#8377;</h4>
+														
+													</span>
+																
+
+
+										</div>
+										
+									</div>
+									<div class="m-portlet__body high_body">
+										<!--begin::Widget5-->
+										<div class="m-widget4">
+											
+											<div class="m-widget4__item">
+												<div class="m-widget4__img m-widget4__img--logo">
+													<a href="#" class="btn btn-brand m-btn m-btn--icon m-btn--icon-only m-btn--custom m-btn--pill">
+															<i class="fa flaticon-list"></i>
+														</a>
+												</div>
+												<div class="m-widget4__info">
+													<span class="m-widget4__title">
+														Transit Inspection(Airbus A320-232 & A320-251 N-Theoretical Elements)
+														Training
+													</span>
+													<br>
+													<!-- 
+													<span class="m-widget4__ext pt-4">
+													<span class="m-widget4__sub p-3">
+														Price: 
+													</span>
+													<span class="m-widget4__number m--font-danger">
+														 17000 &#8377;
+														
+													</span>
+												</span> -->
+												</div>
+												
+											</div>
+											
+											
+										</div>
+										<!--end::Widget 5-->
+									</div>
+								</div> </div>
+								
+								<!--end:: Widgets/Top Products-->
+							</div>
+							<div class="col-xl-3">
+								<!--begin:: Widgets/Top Products-->
+								<div class="p-2"><div class="m-portlet m-portlet--bordered-semi m-portlet--full-height zoom">
+									<div class="m-portlet__head">
+										<div class="m-portlet__head-caption">
+											<div class="m-checkbox-list  ">
+																	<label class="m-checkbox">
+																		<input type="checkbox">
+																		
+																		<span></span>
+																	</label>
+																	
+																</div>
+																
+																	<span class="m-widget4__number m--font-danger">
+														<h4 class="text-right"> 17000 &#8377;</h4>
+														
+													</span>
+																
+
+
+										</div>
+										
+									</div>
+									<div class="m-portlet__body high_body">
+										<!--begin::Widget5-->
+										<div class="m-widget4">
+											
+											<div class="m-widget4__item">
+												<div class="m-widget4__img m-widget4__img--logo">
+													<a href="#" class="btn btn-brand m-btn m-btn--icon m-btn--icon-only m-btn--custom m-btn--pill">
+															<i class="fa flaticon-list"></i>
+														</a>
+												</div>
+												<div class="m-widget4__info">
+													<span class="m-widget4__title">
+														Transit Inspection(Airbus A320-232 & A320-251 N-Theoretical Elements)
+														Training
+													</span>
+													<br>
+													<!-- 
+													<span class="m-widget4__ext pt-4">
+													<span class="m-widget4__sub p-3">
+														Price: 
+													</span>
+													<span class="m-widget4__number m--font-danger">
+														 17000 &#8377;
+														
+													</span>
+												</span> -->
+												</div>
+												
+											</div>
+											
+											
+										</div>
+										<!--end::Widget 5-->
+									</div>
+								</div> </div>
+								
+								<!--end:: Widgets/Top Products-->
+							</div>
+
+
+
+							<div class="col-xl-3">
+								<!--begin:: Widgets/Top Products-->
+								<div class="p-2"><div class="m-portlet m-portlet--bordered-semi m-portlet--full-height zoom">
+									<div class="m-portlet__head">
+										<div class="m-portlet__head-caption">
+											<div class="m-checkbox-list  ">
+																	<label class="m-checkbox">
+																		<input type="checkbox">
+																		
+																		<span></span>
+																	</label>
+																	
+																</div>
+																
+																	<span class="m-widget4__number m--font-danger">
+														<h4 class="text-right"> 17000 &#8377;</h4>
+														
+													</span>
+																
+
+
+										</div>
+										
+									</div>
+									<div class="m-portlet__body high_body">
+										<!--begin::Widget5-->
+										<div class="m-widget4">
+											
+											<div class="m-widget4__item">
+												<div class="m-widget4__img m-widget4__img--logo">
+													<a href="#" class="btn btn-brand m-btn m-btn--icon m-btn--icon-only m-btn--custom m-btn--pill">
+															<i class="fa flaticon-list"></i>
+														</a>
+												</div>
+												<div class="m-widget4__info">
+													<span class="m-widget4__title">
+														Transit Inspection(Airbus A320-232 & A320-251 N-Theoretical Elements)
+														Training
+													</span>
+													<br>
+													<!-- 
+													<span class="m-widget4__ext pt-4">
+													<span class="m-widget4__sub p-3">
+														Price: 
+													</span>
+													<span class="m-widget4__number m--font-danger">
+														 17000 &#8377;
+														
+													</span>
+												</span> -->
+												</div>
+												
+											</div>
+											
+											
+										</div>
+										<!--end::Widget 5-->
+									</div>
+								</div> </div>
+								
+								<!--end:: Widgets/Top Products-->
+							</div>
+							
+						</div>
+						<!--End::Section-->
+
+						</div>
+						<!--End::Section-->
+<a href="enterprise_add_cart.html"><button type="button" class="btn btn-brand dropdown m--pull-right" ><i class="la la-plus"></i>Add To Cart</button>	</a>
+
+
+					</div>
 				</div>
+
+
 			</div>
 			<!-- end::Body -->
+
 <!-- begin::Footer -->
-			<footer class="m-grid__item m-footer ">
+			<footer class="m-grid__item m-footer " style="margin-top: 20px;">
 				<div class="m-container m-container--responsive m-container--xxl m-container--full-height m-page__container">
 					<div class="m-footer__wrapper">
 						<div class="m-stack m-stack--flex-tablet-and-mobile m-stack--ver m-stack--desktop">
 							<div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--last">
 								<span class="m-footer__copyright">
-									2018 &copy;  TATA SIA Airlines Limited. Developed by
+									&copy; 2019 TATA SIA Airlines Limited. Developed by
 									<a href="http://www.cyperts.net/" class="m-link">
 										Cyperts
 									</a>
